@@ -2,9 +2,7 @@ import { RequestHandler } from "express";
 import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
 import { env } from "../../utils";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/client";
 
 export const protect: RequestHandler = asyncHandler(
   async (req: any, res, next) => {

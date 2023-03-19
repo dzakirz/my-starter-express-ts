@@ -1,9 +1,7 @@
 import { generateToken } from "../../utils";
 import asyncHandler from "express-async-handler";
 import { RequestHandler } from "express";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/client";
 
 export const registerUser: RequestHandler = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
