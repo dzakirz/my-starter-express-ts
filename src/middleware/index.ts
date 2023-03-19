@@ -1,4 +1,5 @@
-import { errorHandler } from "./ErrorHandler";
-import { routeHandler } from "./RouteHandler";
+import { errorHandler } from "./middleware/ErrorHandler";
+import { routeHandler } from "./middleware/RouteHandler";
+import { protect } from "./middleware/Auth";
 
-export { errorHandler, routeHandler };
+export { errorHandler, routeHandler, protect };

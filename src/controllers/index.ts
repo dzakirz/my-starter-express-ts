@@ -1,3 +1,4 @@
-import * as ExampleController from "./Example";
+import * as ExampleController from "./controllers/Example";
+import * as UserController from "./controllers/Example";
 
-export { ExampleController };
+export { ExampleController, UserController };

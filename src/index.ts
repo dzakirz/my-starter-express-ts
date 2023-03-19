@@ -1,5 +1,5 @@
 import "module-alias/register";
-import { env } from "./utils/ValidateEnv";
+import { env } from "./utils/utils/ValidateEnv";
 import { app } from "./App";
 
 app.listen(env.PORT, () => {
