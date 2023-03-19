@@ -3,6 +3,7 @@ import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
 import { env } from "../../utils";
 import { prisma } from "../../prisma/client";
+import createHttpError from "http-errors";
 
 export const protect: RequestHandler = asyncHandler(
   async (req: any, res, next) => {
